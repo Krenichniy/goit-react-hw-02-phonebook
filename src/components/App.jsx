@@ -87,8 +87,7 @@ class App extends Component {
 
 const Container = styled.div`
           height: 100vh;
-          fontSize: 40;
-          color: '#010101';
+          color: #010101;
           text-align:center;
 `
 
