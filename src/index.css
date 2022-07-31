@@ -1,4 +1,32 @@
 @import-normalize; /* bring in normalize.css styles */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+ol,
+ul {
+  padding: 0%;
+  list-style: none;
+}
 
 body {
   margin: 0;
