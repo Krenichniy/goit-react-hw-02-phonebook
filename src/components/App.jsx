@@ -76,11 +76,8 @@ class App extends Component {
     const renderList = this.getFiltredList();
         return (
           <Container>
-            <h1>Phonebook</h1>
             <Form addNewContact={this.addNewContact} onNotValid={ this.showValidationMessage} />
-
-            <h2>Contacts</h2>
-            <Filter  filter ={this.state.filter}onFilterChange={ this.onFilterChange} />
+            <Filter  filter ={this.state.filter} onFilterChange={ this.onFilterChange} />
             <ContactsList list={renderList} removeItem={ this.removeItem} />
       </Container>
     );

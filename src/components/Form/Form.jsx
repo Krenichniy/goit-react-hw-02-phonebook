@@ -37,6 +37,8 @@ class Form extends Component {
         const { name, tel } = this.state;
         const { addNewContact, onNotValid } = this.props;
         return (
+            <>
+            <h1>Phonebook</h1>
             <FormContainer onSubmit={(event) => {this.formValidation(event, addNewContact, onNotValid)}}>
                 <LabelContainer >
                     Name
@@ -62,7 +64,8 @@ class Form extends Component {
                         onChange={this.handleChange} />
                 </LabelContainer>
                 <button type='submit'>Add contact</button>
-            </FormContainer>
+                </FormContainer>
+                </>
         )
     }
 }
